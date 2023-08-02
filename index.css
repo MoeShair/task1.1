@@ -1,0 +1,238 @@
+.header {
+    position: fixed;
+    height: 100px;
+    background-color: white;
+    width: 100%;
+
+}
+
+.header_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto 12rem;
+}
+
+.header button,
+.header input {
+    margin: 35px 0px;
+    height: 60%;
+}
+.header img{
+    margin-top: 15px;
+}
+
+.header input {
+    border-radius: 4px;
+    width: 25rem;
+}
+
+.container {
+   /* width: 100%;*/
+    /*margin-right: 60px;*/
+    margin-left: 300px;
+    margin-top: 20px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.x-container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.pricing {
+    margin-top: 150px;
+    text-align: center;
+    color: #0039bb;
+}
+
+.footer {
+    display: flex;
+    flex: 0;
+    background-color: #171b42;
+    color: white;
+    padding-top: 8px;
+    margin-top: 30px;
+}
+.footer_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.plans {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(246 248 255);
+}
+
+hr {
+    width: 100%;
+    border: 0;
+    clear: both;
+    display: block;
+    background-color: white;
+    height: 1px;
+}
+
+.login {
+    color: #0039bb;
+    background-color: white;
+    border-color: #0039bb;
+    border-radius: 10px;
+}
+
+.login:hover {
+    color: white;
+    background-color: #0039bb;
+
+}
+
+.signUp_button {
+    color: white;
+    background-color: #0039bb;
+    border-radius: 10px;
+    border-style: none;
+}
+
+.signUp_button:hover {
+    background-color: #171b42;
+}
+
+.header h1 {
+    display: inline;
+    color: gray;
+}
+
+.plan2 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.plan1 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-style: groove;
+    background-color: white;
+    padding-left: 15px;
+    border-radius: 20px 0px 0px 20px;
+
+}
+
+.plan3 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.plan1_container {
+    min-width: 50%;
+    padding-bottom: 5px;
+    margin-top: 8rem;
+}
+
+.plan2_container {
+    min-width: 50%;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    margin-top: 5rem;
+    border-style: groove;
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.plan3_container {
+    min-width: 50%;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    border-style: groove;
+    background-color: white;
+    margin-top: 8rem;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.plan2 h2 {
+    color: #0039bb;
+}
+
+@media (max-width : 720px) {
+    .container {
+        margin-top: 20px;
+        margin-left: 0;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .plans {
+        box-sizing: border-box;
+        justify-items: center;
+        display: flex;
+        flex-direction: column;
+       
+
+    }
+
+    .plan1{
+        box-sizing: border-box;
+        padding-bottom: 5px;
+        border-radius: 20px;
+    }
+
+    .plan3_container {
+        /*grid-area: plan3;*/
+        width: 95% !important;
+        padding: 5px;
+        border-radius: 20px;
+        padding-left: 10px;
+        margin-top: 4rem;
+    }
+
+    .plan2_container {
+        /*grid-area: plan2;*/
+        margin-top: 4rem;
+        width: 95% !important;
+        padding: 5px;
+        border-radius: 20px;
+        padding-left: 10px;
+    }
+
+    .plan1_container {
+        /*grid-area: plan1;*/
+        /*margin-top: 10px;*/
+        /*min-width: 300px;*/
+        padding: 5px;
+        padding-left: 10px;
+    }
+    .header h1{
+        display: none;
+    }
+    .header input{
+        width: 10rem;
+    }
+    .pricing{
+        margin-left: 150px;
+    }
+}
